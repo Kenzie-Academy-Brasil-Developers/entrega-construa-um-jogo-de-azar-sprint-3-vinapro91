@@ -1,0 +1,57 @@
+/* Reset */
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, summary, footer, main, aside, section{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+list-style-type: none;
+}
+.div-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header {
+    padding-bottom: 15px;
+}
+.header-h1{
+    text-align: center;
+}
+
+.box_content {
+    width: 350px;
+    height: 300px;
+    border:1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: blue;
+}
+.box_content p {
+    font-size: 1rem;
+    color: blanchedalmond;
+}
+.resultado {
+    border: 1px solid black;
+    height: 50px;
+}
+.refresh {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+}
+button {
+    width: 80px;
+    height: 50px;
+}
+.resultado-pc {
+    display: none;
+}
+.resultado {
+    text-align: center;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
