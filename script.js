@@ -33,8 +33,8 @@ const mostraEscolhaPC = (aleatorio) => {
     }
     
 }
-
-mostraEscolhaPC(escolhaPC())
+let escolhaPc = escolhaPC()
+mostraEscolhaPC(escolhaPc)
 
 
 
@@ -67,43 +67,43 @@ tesoura.addEventListener("click",  function(){
 
 const compara = () => {
         
-    if (escolhaUsuario === escolhaPC()){
+    if (escolhaUsuario === escolhaPc){
         let textResut = document.createTextNode("empatou")
         let novoParagrafo = document.createElement("p")
         novoParagrafo.appendChild(textResut)
         resultado.appendChild(novoParagrafo)
     }
-    else if (escolhaUsuario === 1 && escolhaPC() === 2){
+    else if (escolhaUsuario === 1 && escolhaPc === 2){
         let textResut = document.createTextNode("perdeu")
         let novoParagrafo = document.createElement("p")
         novoParagrafo.appendChild(textResut)
         resultado.appendChild(novoParagrafo)
     }
-    else if (escolhaUsuario === 1 && escolhaPC() === 3){
+    else if (escolhaUsuario === 1 && escolhaPc === 3){
         let textResut = document.createTextNode("ganhou")
         let novoParagrafo = document.createElement("p")
         novoParagrafo.appendChild(textResut)
         resultado.appendChild(novoParagrafo)
     }
-    else if (escolhaUsuario === 2 && escolhaPC() === 1){
+    else if (escolhaUsuario === 2 && escolhaPc === 1){
         let textResut = document.createTextNode("ganhou")
         let novoParagrafo = document.createElement("p")
         novoParagrafo.appendChild(textResut)
         resultado.appendChild(novoParagrafo)
     }
-    else if (escolhaUsuario === 2 && escolhaPC() === 3){
+    else if (escolhaUsuario === 2 && escolhaPc === 3){
         let textResut = document.createTextNode("perdeu")
         let novoParagrafo = document.createElement("p")
         novoParagrafo.appendChild(textResut)
         resultado.appendChild(novoParagrafo)
     }
-    else if (escolhaUsuario === 3 && escolhaPC() === 1){
+    else if (escolhaUsuario === 3 && escolhaPc === 1){
         let textResut = document.createTextNode("perdeu")
         let novoParagrafo = document.createElement("p")
         novoParagrafo.appendChild(textResut)
         resultado.appendChild(novoParagrafo)
     }
-    else if (escolhaUsuario === 3 && escolhaPC() === 2){
+    else if (escolhaUsuario === 3 && escolhaPc === 2){
         let textResut = document.createTextNode("ganhou")
         let novoParagrafo = document.createElement("p")
         novoParagrafo.appendChild(textResut)
